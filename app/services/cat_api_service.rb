@@ -2,7 +2,7 @@ class CatApiService
   include HTTParty
 
   def initialize(api_key, qtd_imgs)
-    @base_uri = "https://api.thecatapi.com/v1/images/search?limit=#{qtd_imgs}&has_breeds=1"
+    @base_url = "https://api.thecatapi.com/v1/images/search?limit=#{qtd_imgs}&has_breeds=1"
     @options = {
       headers: {
         'x-api-key': api_key
@@ -11,7 +11,7 @@ class CatApiService
   end
 
   def fetch_cats
-    response = self.class.get("#{@base_uri}", @options)
+    response = self.class.get("#{@base_url}", @options)
 
     if response.success?
       response.parsed_response
