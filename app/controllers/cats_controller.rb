@@ -5,7 +5,7 @@ class CatsController < ApplicationController
     qtd_imgs = 10
 
     cat_service = CatApiService.new(api_key, qtd_imgs)
-    debugger
+
     @cats = cat_service.fetch_cats
   end
 end
