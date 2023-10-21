@@ -1,0 +1,18 @@
+ul {
+  list-style: none; /* Remova os marcadores padrão da lista */
+}
+
+li {
+  clear: both; /* Limpe flutuações anteriores para evitar sobreposição */
+  margin-bottom: 10px; /* Adicione margem inferior para espaçamento */
+}
+
+.left-content {
+  float: left; /* Coloca os <li> à esquerda da tela */
+  width: 50%; /* Define a largura para 50% da tela */
+}
+
+.right-content {
+  float: right; /* Coloca a imagem à direita da tela */
+  width: 50%; /* Define a largura para 50% da tela */
+}
