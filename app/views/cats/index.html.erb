@@ -1,5 +1,10 @@
 <h1>Cats</h1>
 
+<%= form_with url: cats_path, method: :get do |form| %>
+  <%= form.search_field :query %>
+  <%= form.button 'Search' %>
+<% end %>
+
 <ul>
   <% @cats.each do |cat| %>
     <div class="left-content">

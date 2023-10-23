@@ -1,6 +1,6 @@
 class CatsController < ApplicationController
 
   def index
-    @cats = Cat.all
+    @cats = Cat.search(params[:query])
   end
 end
