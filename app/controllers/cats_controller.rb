@@ -1,6 +1,8 @@
 class CatsController < ApplicationController
 
   def index
-    @cats = Cat.search(params[:query])
+    cats = Cat.pagy_search(params[:query])
+
+    @pagy, @cats = pagy_meilisearch(cats, items: 10)
   end
 end

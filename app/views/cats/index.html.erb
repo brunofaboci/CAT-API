@@ -5,6 +5,8 @@
   <%= form.button 'Search' %>
 <% end %>
 
+<%== pagy_nav(@pagy) %>
+
 <ul>
   <% @cats.each do |cat| %>
     <div class="left-content">
