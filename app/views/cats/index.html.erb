@@ -3,14 +3,16 @@
 <ul>
   <% @cats.each do |cat| %>
     <div class="left-content">
-      <li>Name: <%= cat['breeds'].first['name'] %></li>
-      <li>Temperament: <%= cat['breeds'].first['temperament'] %></li>
-      <li>Origin: <%= cat['breeds'].first['origin'] %></li>
-      <li>Description: <%= cat['breeds'].first['description'] %></li>
+      <li>Name: <%= cat.name %></li>
+      <li>Temperament: <%= cat.temperament %></li>
+      <li>Origin: <%= cat.origin %></li>
+      <li>Weight: <%= cat.weight %> kgs"</li>
+      <li>Life Span: <%= cat.life_span %> years </li>
+      <li>Description: <%= cat.description %></li>
     </div>
     <div class="right-content">
       <li>
-        <img src="<%= cat['url'] %>", alt="<%= cat['breeds'].first['name'] %>", style="max-height: 500px; max-width: 500px">
+        <img src="<%= cat.url %>", alt="<%= cat.name %>", style="max-height: 500px; max-width: 500px">
       </li>
     </div>
     <div style="clear: both;"></div>
