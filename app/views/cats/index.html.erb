@@ -13,7 +13,7 @@
       <li>Name: <%= cat.name %></li>
       <li>Temperament: <%= cat.temperament %></li>
       <li>Origin: <%= cat.origin %></li>
-      <li>Weight: <%= cat.weight %> kgs"</li>
+      <li>Weight: <%= cat.weight %> kgs </li>
       <li>Life Span: <%= cat.life_span %> years </li>
       <li>Description: <%= cat.description %></li>
     </div>
@@ -25,3 +25,5 @@
     <div style="clear: both;"></div>
   <% end %>
 </ul>
+
+<%== pagy_nav(@pagy) %>
