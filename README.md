@@ -7,3 +7,9 @@ API: https://developers.thecatapi.com/view-account/ylX4blBYT9FaoVd6OhvR?report=b
 
 API_KEY: para obter a key, é preciso acessar o site https://thecatapi.com/ e seguir os passos indicados.
   a key será enviada pro email cadastrado, depois basta substituir o valor da variavel "api_key" no controller.
+
+# Meilisearch - Instalação
+
+Para instalar o meilisearch, basta seguir a documentação:
+
+https://www.meilisearch.com/docs/learn/getting_started/installation#installation

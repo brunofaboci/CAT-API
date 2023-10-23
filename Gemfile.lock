@@ -128,6 +128,10 @@ GEM
       net-smtp
     marcel (1.0.2)
     matrix (0.4.2)
+    meilisearch (0.25.1)
+      httparty (>= 0.17.1, < 0.22.0)
+    meilisearch-rails (0.10.1)
+      meilisearch (~> 0.25.0)
     mini_mime (1.1.5)
     minitest (5.20.0)
     msgpack (1.7.2)
@@ -248,6 +252,7 @@ DEPENDENCIES
   httparty (~> 0.21.0)
   importmap-rails
   jbuilder
+  meilisearch-rails (~> 0.10.1)
   puma (>= 5.0)
   rails (~> 7.1.0)
   redis (>= 4.0.1)
